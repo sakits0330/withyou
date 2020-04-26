@@ -4,7 +4,19 @@
    <title>with you</title>
    <link rel="stylesheet" href="withyou.css">
    <link rel="stylesheet" href="media-withyou.css">
+   <link rel="stylesheet" href="magic-master/dist/magic.css">
    <meta name= viewport content= width=device-width initial-sca   le=1 shrink-to-fit=no>
+
+   <style>
+      .active{
+         font-size: 100px;
+         color: red;
+      }
+
+      *{
+         transition: all 0.3s ease-in;
+      }
+   </style>
 </head>
 <body>
    <div class="wrap">
@@ -48,6 +60,7 @@
                      心から寄り添える( with you )ベッドを。
                   </p>
                   <div class="content1-explore">
+                     <!-- ↓これをマウスオーバーしてみなはれ -->
                      <a class="explore">EXPLORE</a>
                   </div>
                </div>
@@ -125,6 +138,57 @@
             <img src="./images/fbmark.png">
          </div>
    </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script>
+      $(function(){
+          
+      });
+
+      $(function(){
+         $('.logo').on('click', function(){
+            var data = $('.content1-title').hasClass('active');
+            if ( data ) {
+               $('.content1-title').removeClass('active');
+            } else {
+               $('.content1-title').addClass('active');
+            }
+         });
+      });
+   </script>
+
+   <script>
+      $(function(){
+         $('.logo').on('click', function(){
+               $('.left').before($('.right'));
+               $('.onlineshop').after($('.logo'));
+         });
+
+         $('.content1-title').on('click', function(){
+               $('.right').before($('.left'));
+         });
+
+         $('.content1-explore a').on('mouseover', function(){
+               $(this).css('background', 'red');
+               $(this).addClass('magictime vanishIn');
+         }).mouseout(function(){
+               $(this).css('background', '');
+               $(this).removeClass('magictime vanishIn');
+         });
+      });
+   </script>
+
+   <script>
+       $(function(){
+           $('.content1-title').mouseover(function(){
+               $(this).css('color', '#333');
+               $(this).addClass('magictime bombLeftOut');
+           }).mouseout(function(){
+               $(this).css('color', '');
+               $(this).removeClass('magictime bombLeftOut');
+           });
+       });
+   </script>
 </body>
 </html>
 
