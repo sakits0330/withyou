@@ -1,0 +1,87 @@
+
+.box1{
+   margin-bottom: 10px;
+}
+
+.square1{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    float: left;
+    position: relative;
+    overflow:hidden;
+}
+
+.square2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    position: relative;
+    float:left;
+    position: relative;
+    left:10%;    
+}
+
+.moji-square2{
+    position: absolute; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    float:left;
+}
+
+.square3{
+   width: 100px;
+   height: 100px;
+   border:1px solid #000000;   
+   float:left;
+   position: relative;
+   left:20%;
+}
+
+.box2{
+   clear: both;
+   margin-top:15%;
+}
+
+
+.square4{
+   width: 10%;
+   height: 100px;
+   border:1px solid #000000;
+   float: left;
+   position:relative;
+   overflow: hidden;
+}
+
+
+.aquare5{
+   width: 15%; 
+   height: 100px;
+   border: 1px solid #000000;
+   float: left;
+   position:relative;
+   left: 5%;
+}
+
+.square6{
+   width: 15%;
+   height: 100px;
+   border: 1px solid #000000;
+   float: left;
+   position:relative;
+   left: 15%;
+}
+
+.box3{
+   clear: both;
+   margin-top: 30%;
+}
+  
+
+.square7{
+   width: 10%;
+   height: 50px;
+   border: 1px solid #000000;
+   position: relative;
+} 
